@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import SongsMan from './components/SongsMan';
+import { Front } from './components/Front';
+import SingleOne from './components/SingleOne';
+// import { useState } from 'react';
+// import SongData from './components/SongData';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ 
+    <BrowserRouter>
+     {/* <SongsMan cavers ={cavers}/> */}
+    <div>
+      {/* <SongData cavers={cavers}/> */}
+        <Routes>
+      <Route path="/" element={<Front />} />
+      <Route path= "/songs" element={<SongsMan />} />
+      <Route path='/cavers/:id' element={<SingleOne/>}/>
+     </Routes>
+    </div>  
+    </BrowserRouter>
   );
 }
 
