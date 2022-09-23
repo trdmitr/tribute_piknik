@@ -4,6 +4,9 @@ import ReactPlayer from "react-player";
 import { useNavigate } from 'react-router-dom'
 import {useMemo} from "react";
 import cavers from './data/cavers.json'
+import BackButton from './UI/Buttons/MyButton';
+import IconButtonHome from './UI/Buttons/IconButtonHome'
+import CaverButton from './UI/Buttons/CaverButton'
 
 const SingleOne = () => {
 
@@ -56,7 +59,9 @@ const SingleOne = () => {
    
     <div className="tribute_app">
     <div className="content">
-    <button onClick={() => navigate("/songs")}>Назад</button>
+    <BackButton onClick={() => navigate("/songs")}>Назад</BackButton>
+    <IconButtonHome onClick={() => navigate("/")}>Главная</IconButtonHome>
+                <CaverButton onClick={() => navigate("/songs")}>Каверы</CaverButton>
       {content}
     </div>
   </div>

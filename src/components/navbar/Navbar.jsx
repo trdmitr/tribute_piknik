@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import Icons from '../Icons'
 export const Navbar = () => {
     const navigate = useNavigate();
   return (
@@ -12,10 +12,13 @@ export const Navbar = () => {
                         
                         Home
                     </span>
-                    {/* <span className="material-symbols-rounded menu">
+                    <span className="material-symbols-rounded menu">
                         auto_detect_voice
-                    </span> */}
-                    <span className="material-symbols-rounded menu"
+                    </span>
+                    <span Icons 
+         name='documents-outline'
+         color='#fff'
+         size='32' className="material-symbols-rounded menu"
                     onClick={() => navigate("/songs")}
                     >
                         text_to_speech
