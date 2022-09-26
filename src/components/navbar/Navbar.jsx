@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import Icons from '../Icons'
+// import Icons from '../Icons'
 export const Navbar = () => {
     const navigate = useNavigate();
   return (

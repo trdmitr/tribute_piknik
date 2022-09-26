@@ -44,6 +44,9 @@ const SingleOne = () => {
         <audio controls className={currSing.audio3 ? '': 'hidden'}
           source src={currSing.audio3} type="audio/mpeg" />  
 		   </div>
+       <div>
+       <img className="tzi-image" src={currSing.picture_tzitata} width={80} />
+       </div>
        <div className= {`
         video_block
         ${currSing.video1 ? '': 'hidden'}
@@ -56,9 +59,7 @@ const SingleOne = () => {
        <p>{currSing.video_name3}</p>
        <ReactPlayer className={currSing.video3 ? '': 'hidden'} id="video_frame" url = {currSing.video3} controls={true} />
        </div> 
-       <div>
-       <img className="tzi-image" src={currSing.picture_tzitata} width={80} />
-       </div>
+       
     </div>);
         }, [currSings])
        

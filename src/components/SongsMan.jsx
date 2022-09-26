@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import '../App.css'
 import { useNavigate } from 'react-router-dom'
 import cavers from './data/cavers.json'
