@@ -1,13 +1,13 @@
 import React from 'react'
-import { useHistory, useParams } from "react-router";
+import { useParams } from "react-router";
 import ReactPlayer from "react-player";
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 import {useMemo} from "react";
 import cavers from './data/cavers.json'
 import BackButton from './UI/Buttons/MyButton';
 import IconButtonHome from './UI/Buttons/IconButtonHome'
 import CaverButton from './UI/Buttons/CaverButton'
-import YoutButton from './UI/Buttons/YoutButton';
+// import YoutButton from './UI/Buttons/YoutButton';
 
 const SingleOne = () => {
 
@@ -23,9 +23,9 @@ const SingleOne = () => {
           
           return  currSings.map((currSing) =>   
          <div className="media_song" key={currSing.id}> 
-            <img className="media-image" src={currSing.photo} width={80} />
+            <img className="media-image" src={currSing.photo} width={80} alt={currSing.name} />
             <div className="header_song">
-        <h>{currSing.name}</h></div>
+        <h2>{currSing.name}</h2></div>
         {/* const element = <a href="https://www.reactjs.org"> link </a>; */}
         {/* <YoutButton onClick={() => "https://www.reactjs.org"}>Канал исполнителя </YoutButton> */}
         <a className='LinkTo'  href={currSing.link}> Канал исполнителя </a>
@@ -45,7 +45,7 @@ const SingleOne = () => {
           source src={currSing.audio3} type="audio/mpeg" />  
 		   </div>
        <div>
-       <img className="tzi-image" src={currSing.picture_tzitata} width={80} />
+       <img className="tzi-image" src={currSing.picture_tzitata} width={80} alt="Цитаты Пикник"/>
        </div>
        <div className= {`
         video_block

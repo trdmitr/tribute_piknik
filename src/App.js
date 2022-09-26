@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter} from 'react-router-dom';
 import './App.css';
 import SongsMan from './components/SongsMan';
 import { Front } from './components/Front';
@@ -18,6 +18,7 @@ function App() {
       <Route path="/" element={<Front />} />
       <Route path= "/songs" element={<SongsMan />} />
       <Route path='/cavers/:id' element={<SingleOne/>}/>
+      
      </Routes>
     </div>  
     </HashRouter>
