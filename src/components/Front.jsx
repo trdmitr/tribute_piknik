@@ -15,14 +15,11 @@ export const Front = () => {
                     <h>Каверы группы Пикник</h>
                 </div>
                 <div className="media">
-                    <img className="media-image_front" src="http://www.aptvisit.ru/images/cms/data/russian_artist/piknik/piknik5.jpg" width={80} alt="" />
+                    <img className="media-image_front" src="https://drive.google.com/uc?export=download&id=1hZriPwbQ8VxV0i5xILF9pPT1TUfgHmkk" width={80} alt="Пикник каверы" />
 
                 </div>
                 <div className="media-body">
-                    <span>Кем бы ты ни был, мир тебе и свет,
-                        Кем бы ты ни был, грош тебе цена.
-                        И все равно ведь где-то в вышине
-                        И для тебя горит звезда одна.</span>
+                    <span>Струн не будет - всё равно сыграю, 67 лет отмечаю!</span>
                 </div>
             </div>
         </div>
