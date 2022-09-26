@@ -1,12 +1,13 @@
 import React from 'react'
 import { useHistory, useParams } from "react-router";
 import ReactPlayer from "react-player";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import {useMemo} from "react";
 import cavers from './data/cavers.json'
 import BackButton from './UI/Buttons/MyButton';
 import IconButtonHome from './UI/Buttons/IconButtonHome'
 import CaverButton from './UI/Buttons/CaverButton'
+import YoutButton from './UI/Buttons/YoutButton';
 
 const SingleOne = () => {
 
@@ -25,7 +26,9 @@ const SingleOne = () => {
             <img className="media-image" src={currSing.photo} width={80} />
             <div className="header_song">
         <h>{currSing.name}</h></div>
-       
+        {/* const element = <a href="https://www.reactjs.org"> link </a>; */}
+        {/* <YoutButton onClick={() => "https://www.reactjs.org"}>Канал исполнителя </YoutButton> */}
+        <a className='LinkTo' href={currSing.link}> Канал исполнителя </a>
 		  <div className= {`
         audio_block
         ${currSing.audio1 ? '' : 'hidden'}
@@ -57,14 +60,17 @@ const SingleOne = () => {
        </div>
     </div>);
         }, [currSings])
+       
         
   return (
    
     <div className="tribute_app">
     <div className="content">
+      
     <BackButton onClick={() => navigate("/songs")}>Назад</BackButton>
     <IconButtonHome onClick={() => navigate("/")}>Главная</IconButtonHome>
                 <CaverButton onClick={() => navigate("/songs")}>Каверы</CaverButton>
+               
       {content}
     </div>
   </div>

@@ -334,3 +334,15 @@ audio::-webkit-media-controls-enclosure {
 
   background-color: #500b85ca;
   }
+  .LinkTo {
+    position: absolute;
+    top: 90%;
+    left: 63%;
+    background-color: rgb(110, 29, 131); /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 2px 6px;
+    font-size: 14px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    border-radius: .5em;
+}
