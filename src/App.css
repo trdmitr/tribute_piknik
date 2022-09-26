@@ -336,8 +336,8 @@ audio::-webkit-media-controls-enclosure {
   }
   .LinkTo {
     position: absolute;
-    top: 90%;
-    left: 63%;
+    top: 97%;
+    left: 27%;
     background-color: rgb(110, 29, 131); /* Blue background */
     border: none; /* Remove borders */
     color: white; /* White text */
@@ -345,4 +345,8 @@ audio::-webkit-media-controls-enclosure {
     font-size: 14px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
     border-radius: .5em;
+}
+.tzi-image {
+  height: auto;
+  width: 100%;
 }

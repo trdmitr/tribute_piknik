@@ -28,7 +28,8 @@ const SingleOne = () => {
         <h>{currSing.name}</h></div>
         {/* const element = <a href="https://www.reactjs.org"> link </a>; */}
         {/* <YoutButton onClick={() => "https://www.reactjs.org"}>Канал исполнителя </YoutButton> */}
-        <a className='LinkTo' href={currSing.link}> Канал исполнителя </a>
+        <a className='LinkTo'  href={currSing.link}> Канал исполнителя </a>
+        
 		  <div className= {`
         audio_block
         ${currSing.audio1 ? '' : 'hidden'}
