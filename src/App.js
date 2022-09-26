@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import './App.css';
 import SongsMan from './components/SongsMan';
 import { Front } from './components/Front';
@@ -10,7 +10,7 @@ function App() {
   
   return (
  
-    <BrowserRouter>
+    <HashRouter>
      {/* <SongsMan cavers ={cavers}/> */}
     <div>
       {/* <SongData cavers={cavers}/> */}
@@ -20,7 +20,7 @@ function App() {
       <Route path='/cavers/:id' element={<SingleOne/>}/>
      </Routes>
     </div>  
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
