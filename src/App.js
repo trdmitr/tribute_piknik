@@ -5,7 +5,9 @@ import { Front } from './components/Front';
 import SingleOne from './components/SingleOne';
 // import { useState } from 'react';
 // import SongData from './components/SongData';
-
+function NotFound(){
+  return <h2>Ресурс не найден</h2>;
+}
 function App() {
   
   return (
@@ -18,7 +20,7 @@ function App() {
       <Route path="/" element={<Front />} />
       <Route path= "/songs" element={<SongsMan />} />
       <Route path='/cavers/:id' element={<SingleOne/>}/>
-      
+      <Route path="*" element={<NotFound />} />
      </Routes>
     </div>  
     </HashRouter>
