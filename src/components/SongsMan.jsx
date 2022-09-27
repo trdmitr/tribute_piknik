@@ -19,8 +19,9 @@ const SongsMan = () => {
                     <div className="b-col" onClick={() => navigate(`/cavers/${caver.id}`)}>   
                             <div className="b-item" key={caver.id}> 
                             <img src={caver.photo} alt=""/> 
-                            {/* <p>{caver.name}</p>                           */}
+                                                   
                         </div>
+                        <p>{caver.name}</p>  
                         </div>
                          ))}
                 </div>
