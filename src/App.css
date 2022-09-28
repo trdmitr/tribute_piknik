@@ -113,6 +113,11 @@ background-size: cover;
   overflow: hidden;
   border-radius: 50%;
 }
+ 
+.b-item:hover {
+  cursor: pointer;
+  /* transform: translate(15px, -50px); */
+}
 
 .b-item img {
   /* padding: 5px; */

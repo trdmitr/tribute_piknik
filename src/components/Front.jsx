@@ -1,15 +1,22 @@
-import React from 'react'
+import React from 'react';
 import IconButtonHome from './UI/Buttons/IconButtonHome'
 import { useNavigate } from 'react-router-dom'
 import CaverButton from './UI/Buttons/CaverButton'
 
+
+// import Modal from './components/UI/Modals/Modals';
 export const Front = () => {
     const navigate = useNavigate();
+    
     return (
+
+
         <div className="tribute_app">
             <div className="content">
+                
                 <IconButtonHome onClick={() => navigate("/")}>Главная</IconButtonHome>
                 <CaverButton onClick={() => navigate("/songs")}>Каверы</CaverButton>
+                
                 <div className="header">
                     <h>Каверы группы Пикник</h>
                 </div>
