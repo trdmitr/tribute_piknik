@@ -8,7 +8,8 @@ import CaverButton from './UI/Buttons/CaverButton'
 import Modal from './UI/Modals/Modals';
 // import MyButton from './UI/Buttons/MyButton';
 import PlayButton from './UI/Buttons/PlayButton';
-import PlayList from './PlayList';
+import About from './About'
+// import PlayList from './PlayList';
  
 const SongsMan = () => {
     const navigate = useNavigate();
@@ -19,15 +20,15 @@ const SongsMan = () => {
             <div className="content">
                 <h1>Слушаем!</h1> 
                 <Modal visible={modal} setVisible={setModal}>
-                    <PlayList></PlayList>
+                   <About/>
                 </Modal>           
                 <IconButtonHome onClick={() => navigate("/")}>Главная</IconButtonHome>
                 <CaverButton onClick={() => navigate("/songs")}>Каверы</CaverButton>
-                <PlayButton onClick={() => setModal(true)}>Плейлист</PlayButton>
-                <div className="b-row">
+                <PlayButton onClick={() => setModal(true)}></PlayButton>
+                <div className="b-row" >
                 {cavers.map((caver) => (
-                    <div className="b-col" onClick={() => navigate(`/cavers/${caver.id}`)}>   
-                            <div className="b-item" key={caver.index}> 
+                    <div className="b-col" key={caver.index} onClick={() => navigate(`/cavers/${caver.id}`)}>   
+                            <div className="b-item"> 
                             <img src={caver.photo} alt=""/> 
                                                    
                         </div>
