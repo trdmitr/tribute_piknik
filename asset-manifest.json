@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tribute_piknik/static/css/main.833fc941.css",
-    "main.js": "/tribute_piknik/static/js/main.bbce4559.js",
+    "main.css": "/tribute_piknik/static/css/main.f5ed2f8d.css",
+    "main.js": "/tribute_piknik/static/js/main.3472bfcc.js",
     "static/js/787.f29c495a.chunk.js": "/tribute_piknik/static/js/787.f29c495a.chunk.js",
     "index.html": "/tribute_piknik/index.html",
-    "main.833fc941.css.map": "/tribute_piknik/static/css/main.833fc941.css.map",
-    "main.bbce4559.js.map": "/tribute_piknik/static/js/main.bbce4559.js.map",
+    "main.f5ed2f8d.css.map": "/tribute_piknik/static/css/main.f5ed2f8d.css.map",
+    "main.3472bfcc.js.map": "/tribute_piknik/static/js/main.3472bfcc.js.map",
     "787.f29c495a.chunk.js.map": "/tribute_piknik/static/js/787.f29c495a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.833fc941.css",
-    "static/js/main.bbce4559.js"
+    "static/css/main.f5ed2f8d.css",
+    "static/js/main.3472bfcc.js"
   ]
 }
